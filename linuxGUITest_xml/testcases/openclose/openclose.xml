@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuit>
+	<testname>ofd_seal_htfoxit</testname>
+	<testinfo>seal_htfoxit</testinfo>
+	<testfiletype>ofdfile</testfiletype>
+	<teststep>
+		<step>openfile</step>
+		<step>closeofd</step>
+	</teststep>
+</testsuit>

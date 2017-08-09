@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuit>
+	<testname>insertPageFromFile</testname>
+	<testinfo>page_manage</testinfo>
+	<testfiletype>ofdfile</testfiletype>
+	<teststep>
+		<step>xdtkey Alt+o,1;xdtkey i,1;xdtkey f,1;[插入页面]</step>
+		<step>#插入页面;xdtkey Alt+a,1;xdtkey Down,1;xdtkey Return,1</step>
+		<step>#选择要插入的文件;paste /mnt/Ubuntu_Share/GitLab_linux_Workspace/GUITest_xml/pre.ofd;xdtkey Return,1</step>
+		<step>#插入页面;xdtkey Down,1;xdtkey Return,1</step>
+		<step>xdtkey Alt+f;xdtkey a;[另存为]</step>
+		<step>sleep 1</step>
+		<step>#另存为;paste_save_file /mnt/GUITest_xml/output/insertPageFromFile,ofd</step>
+		<step>#另存为;xdtkey Return,1</step>
+		<step>#套件;closeofd</step>
+	</teststep>
+</testsuit>
+

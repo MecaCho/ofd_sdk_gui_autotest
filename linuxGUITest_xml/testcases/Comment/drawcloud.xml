@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<testsuit>
+	<testname>drawcloud</testname>
+	<testinfo>comment</testinfo>
+	<testfiletype>ofdfile</testfiletype>
+	<teststep>
+		<step>xdtkey Alt+c,2;xdtkey w,1;xdtkey c,1</step>
+		<step>sleep 1</step>
+		<step>xdt mousemove,225,251,1</step>
+		<step>xdt click,1,1</step>
+		<step>sleep 1</step>
+		<step>xdt mousemove,800,300,1</step>
+		<step>xdt click,1,1</step>
+		<step>sleep 1</step>
+		<step>xdt mousemove,833,539,1</step>
+		<step>xdt click,1,2</step>
+		<step>xdt mouseup,1,1</step>
+		<step>sleep 1</step>
+		<step>xdtkey Alt+f;xdtkey a;[另存为]</step>
+		<step>#另存为;paste_save_file /mnt/GUITest_xml/output/comment/drawcloud,ofd</step>
+		<step>#另存为;xdtkey Return,1</step>
+		<step>#套件;closeofd</step>
+	</teststep>
+</testsuit>
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuit>
+	<testname>ofd_seal_htfoxit</testname>
+	<testinfo>seal_htfoxit</testinfo>
+	<testfiletype>ofdfile</testfiletype>
+	<teststep>
+		<step>opensoft</step>
+		<step>xdtkey ctrl+o;[打开一个文件]</step>
+		<step>#打开一个文件;paste_file;xdtkey Return</step>
+		<step>#套件;closeofd</step>
+	</teststep>
+</testsuit>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuit>
+	<testname>ofd_seal_htfoxit</testname>
+	<testinfo>seal_htfoxit</testinfo>
+	<testfiledb>defaulttestfile.db</testfiledb>
+	<reportdb>defaultreport.db</reportdb>
+	<testfiletype>ofdfile</testfiletype>
+	<teststep>
+		<step>xdtkey Alt+f,1;xdtkey Down,6;xdtkey Return,3;[导出页面设置]</step>
+		<step>#导出页面设置;xdtkey Return,1</step>
+		<step>mkfile png</step>
+		<step>sleep 1</step>
+		<step>#另存为;paste_save_file /mnt/GUITest_xml/output/export,png</step>
+		<step>#另存为;xdtkey Return,1</step>
+		<step>check_num FoxitOfficeSuite,5,3</step>
+		<step>#套件;closeofd</step>
+	</teststep>
+</testsuit>
+

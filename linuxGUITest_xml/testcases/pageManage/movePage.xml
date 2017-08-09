@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuit>
+	<testname>deletePage</testname>
+	<testinfo>page_manage</testinfo>
+	<testfiletype>ofdfile</testfiletype>
+	<teststep>
+		<step>xdtkey Alt+o,1;xdtkey m,1;[移动页面]</step>
+		<step>#移动页面;xdt type,2;xdtkey Return,1</step>
+		<step>xdtkey Alt+f;xdtkey a;[另存为]</step>
+		<step>sleep 1</step>
+		<step>#另存为;paste_save_file /mnt/GUITest_xml/output/movePage,ofd</step>
+		<step>#另存为;xdtkey Return,1</step>
+		<step>#套件;closeofd</step>
+	</teststep>
+</testsuit>
+

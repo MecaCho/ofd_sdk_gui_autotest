@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuit>
+	<testname>insert_blankPage</testname>
+	<testinfo>page_manage</testinfo>
+	<testfiletype>ofdfile</testfiletype>
+	<teststep>
+		<step>xdtkey Alt+o,1</step>
+		<step>xdtkey i,1</step>
+		<step>xdtkey b,1</step>
+		<step>waitwindow 插入空白页</step>
+		<step>xdtkey Alt+o,1</step>
+		<step>sleep 1</step>
+		<step>xdtkey Alt+f</step>
+		<step>xdtkey a</step>
+		<step>waitwindow 另存为</step>
+		<step>paste_save_file /mnt/GUITest_xml/output/insertblankPage,ofd</step>
+		<step>xdtkey Return,1</step>
+		<step>closeofd</step>
+	</teststep>
+</testsuit>
+

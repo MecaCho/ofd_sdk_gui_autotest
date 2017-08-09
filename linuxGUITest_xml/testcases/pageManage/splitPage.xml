@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuit>
+	<testname>splitPage</testname>
+	<testinfo>page_manage</testinfo>
+	<testfiletype>ofdfile</testfiletype>
+	<teststep>
+		<step>xdtkey Alt+o,1;xdtkey s,1;[文档拆分]</step>
+		<step>#文档拆分;xdtkey Alt+s,1;xdtkey Down,1;xdtkey Return,1</step>
+		<step>makedirs_ /mnt/GUITest_xml/output/splitPage</step>
+		<step>#浏览文件夹;paste /mnt/GUITest_xml/output/splitPage;xdtkey Return,1</step>
+		<step>#文档拆分;xdtkey Return,1</step>
+		<step>#套件;closeofd</step>
+	</teststep>
+</testsuit>
+
